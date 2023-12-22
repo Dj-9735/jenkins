@@ -1,23 +1,23 @@
-Pipeline{
-	Agent any
-		Stages{
-			Stage('Source code'){
-				Steps{
+pipeline{
+	agent any
+		stages{
+			stage('Source code'){
+				steps{
 					echo "Fetching code from Git Hub"
 					}
 							}
-			Stage('Build'){
-						Steps{
+			stage('Build'){
+						steps{
 							echo "Build is created"
 							}
 						}
-			Stage('Test'){
-						Steps{
+			stage('Test'){
+						steps{
 							echo "Testing is done"
 							}
 					}
-			Stage('Deploy'){
-						Steps{
+			stage('Deploy'){
+						steps{
 							echo "Deployment is done"
 							}
 						}
