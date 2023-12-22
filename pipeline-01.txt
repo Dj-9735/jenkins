@@ -1,0 +1,26 @@
+Pipeline{
+	Agent any
+		Stages{
+			Stage('Source code'){
+				Steps{
+					echo "Fetching code from Git Hub"
+					}
+							}
+			Stage('Build'){
+						Steps{
+							echo "Build is created"
+							}
+						}
+			Stage('Test'){
+						Steps{
+							echo "Testing is done"
+							}
+					}
+			Stage('Deploy'){
+						Steps{
+							echo "Deployment is done"
+							}
+						}
+				}
+			}
+		}
