@@ -3,22 +3,22 @@ pipeline {
        stages {
        	stage('Source code') {
             steps {
-                echo 'FEtching code from github'
+                echo 'Getting code from github'
             }
         }
         stage('Build') {
             steps {
-                echo 'Building.. This is the build phase'
+                build'Assignment02'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing.. This is the testing phase'
+                echo 'Testing build'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....  This is the deployment phase'
+                echo 'Deploying build'
             }
         }
 	
